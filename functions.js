@@ -3,7 +3,8 @@ document.querySelector("html").classList.add('js');
 let fileInput  = document.querySelector( ".input-file" ),  
     button     = document.querySelector( ".input-file-trigger" ),
     the_return = document.querySelector(".file-return"),
-    share_link = document.querySelector(".share-link");;
+    share_link = document.querySelector(".share-link"),
+    note = document.querySelector("#note");
       
 button.addEventListener( "keydown", function( event ) {  
     if ( event.keyCode == 13 || event.keyCode == 32 ) {  
@@ -25,7 +26,11 @@ fileInput.addEventListener( "change", function( event ) {
     sha1.update(file_name + new Date());
     let output = sha1.digest('hex').slice(0, 6);
 
-    share_link.innerHTML = `Share link : http://localhost:25548/${output}`;
+    let ip = require('ip');
+    ip_address = ip.address();
+
+    share_link.innerHTML = `Share link : http://${ip_address}:25548/${output}`;
+    note.innerHTML = `NOTE : If you are on NAT, <br>please <a target="_blank" href="https://en.wikipedia.org/wiki/Port_forwarding">'Port forwarding'</a> first.`
 
     let express = require('express');
     let app = express();
