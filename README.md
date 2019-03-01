@@ -54,6 +54,9 @@
 ![img7](https://github.com/lleellee0/images/blob/master/7.png?raw=true)
 
 
+## 사용법 영상
+[![사용법 유튜브 영상](https://github.com/lleellee0/images/blob/master/fileshareuse.png?raw=true)](https://www.youtube.com/watch?v=bUs8SADLI7g)
+
 
 ## 참고
 
