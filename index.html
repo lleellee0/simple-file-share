@@ -2,18 +2,28 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <link rel="stylesheet" media="screen" href="style.css" />
+    <title>Simple File Share</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <h1>Simple File Share</h1>
+    <h2>With Electron</h2>
+      <form action="#">
+        <div class="input-file-container">  
+          <input class="input-file" id="my-file" type="file">
+          <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
+        </div>
+        <p class="file-return"></p>
+        <p class="share-link"></p>
+      </form>
+      <h3 id="note"></h3>
+      <p class="txtcenter copy">Made by <a target="_blank" href="https://github.com/lleellee0/">Foorogrammer</a><br>
+        Design by <a target="_blank" href="https://twitter.com/geoffrey_crofte">@geoffrey_crofte</a></p>
+
 
     <script>
       // You can also require other files to run in this process
-      require('./renderer.js')
+      require('./functions.js');
     </script>
   </body>
 </html>
