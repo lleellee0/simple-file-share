@@ -1,8 +1,19 @@
-# electron-quick-start
+# Simple File Share
 
-**Clone and run for a quick way to see Electron in action.**
+**간단히 파일 하나 상대에서 보내고 싶은데 파일이 너무 큰 경우 경험해 보셨나요?**
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
+- 네이버는 2GB
+- 다음은 4GB
+- 카카오톡은 300MB
+- 텔레그램은 1500MB
+
+나는 큰 파일을 잠깐만 공유해서 상대에게 보내고 싶을 뿐인데 위 서비스 들은 그리 큰 크기를 지원하지 않습니다.
+
+그렇다고 파일을 여러개로 나눠서 보내자니 번거롭고 나누는데 시간이 들기도 하고, 클라우드에 올리자니 클라우드에 올리기 너무 큰 파일도 있고 클라우드는 업로드 하는 시간도 너무 많이 듭니다.
+
+그래서 이 프로그램을 만들었습니다.
+
+
 
 **Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
 
