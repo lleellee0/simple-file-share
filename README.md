@@ -13,7 +13,7 @@
 
 그래서 이 프로그램을 만들었습니다.
 
-[다운로드 링크](https://github.com/lleellee0/simple-file-share/releases/download/v1.0/simple-file-share-win32-ia32.zip)
+[다운로드 링크](https://github.com/lleellee0/simple-file-share/releases/download/v1.1/v1.1.simple-file-share-win32-ia32.zip)
 
 
 ## 사용법
@@ -56,6 +56,14 @@
 
 ## 사용법 영상
 [![사용법 유튜브 영상](https://github.com/lleellee0/images/blob/master/fileshareuse.png?raw=true)](https://www.youtube.com/watch?v=bUs8SADLI7g)
+
+## 패치로그
+19.03.26
+
+25548 ~ +300번 까지의 포트를 랜덤하게 사용하도록 수정
+
+이미 사용중인 포트일 경우 alert로 알림.
+
 
 
 ## 참고
