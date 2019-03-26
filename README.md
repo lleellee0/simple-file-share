@@ -58,11 +58,9 @@
 [![사용법 유튜브 영상](https://github.com/lleellee0/images/blob/master/fileshareuse.png?raw=true)](https://www.youtube.com/watch?v=bUs8SADLI7g)
 
 ## 패치로그
-19.03.26
-
-25548 ~ +300번 까지의 포트를 랜덤하게 사용하도록 수정
-
-이미 사용중인 포트일 경우 alert로 알림.
+#### 19.03.26
+- 25548 ~ +300번 까지의 포트를 랜덤하게 사용하도록 수정
+- 이미 사용중인 포트일 경우 alert로 알림.
 
 
 
