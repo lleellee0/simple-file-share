@@ -29,8 +29,6 @@ fileInput.addEventListener( "change", function( event ) {
     let ip = require('ip');
     ip_address = ip.address();
 
-    share_link.innerHTML = `Share link : http://${ip_address}:25548/${output}`;
-    note.innerHTML = `NOTE : If you are on NAT, <br>please <a target="_blank" href="https://en.wikipedia.org/wiki/Port_forwarding">'Port forwarding'</a> first.`
 
     let express = require('express');
     let app = express();
@@ -43,5 +41,10 @@ fileInput.addEventListener( "change", function( event ) {
         stream.pipe(res);   // 스트림으로 응답
     });
 
-    app.listen(25548);
+    let port = 25548 + Math.floor(Math.random() * 300);
+
+    app.listen(port).on('error', (err) => {alert(`PORT ${port} is aleady use.\nPlease Restart Application. :)`)});
+
+    share_link.innerHTML = `Share link : http://${ip_address}:${port}/${output}`;
+    note.innerHTML = `NOTE : If you are on NAT, <br>please <a target="_blank" href="https://en.wikipedia.org/wiki/Port_forwarding">'Port forwarding'</a> first.`;
 });  
