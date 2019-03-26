@@ -43,7 +43,7 @@ fileInput.addEventListener( "change", function( event ) {
 
     let port = 25548 + Math.floor(Math.random() * 300);
 
-    app.listen(port).on('error', (err) => {alert(`PORT ${port} is aleady use.\nPlease Restart Application. :)`)});
+    app.listen(port).on('error', (err) => {alert(`PORT ${port} is already use.\nPlease Restart Application. :)`)});
 
     share_link.innerHTML = `Share link : http://${ip_address}:${port}/${output}`;
     note.innerHTML = `NOTE : If you are on NAT, <br>please <a target="_blank" href="https://en.wikipedia.org/wiki/Port_forwarding">'Port forwarding'</a> first.`;
